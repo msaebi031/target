@@ -3,7 +3,7 @@ import theme from "../components/Theme";
 import "../public/css/main.css";
 // aliii 22e
 function MyApp({ Component, pageProps }) {
-  //test23
+  //test23444
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
