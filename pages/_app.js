@@ -3,7 +3,7 @@ import theme from "../components/Theme";
 import "../public/css/main.css";
 
 function MyApp({ Component, pageProps }) {
-  //test
+  //test2
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps}  />
