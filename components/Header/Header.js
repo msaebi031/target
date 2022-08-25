@@ -20,7 +20,7 @@ const Headers = () => {
           component="h1"
           color="light.main"
         >
-          طراحی سایت مورد علاقه تون رو به ما بسپارید2
+          طراحی سایت مورد علاقه تون رو به ما بسپارید
         </Typography>
         <Typography
           variant="subtitle1"
