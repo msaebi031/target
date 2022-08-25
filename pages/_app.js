@@ -4,6 +4,7 @@ import "../public/css/main.css";
 // aliii 22e
 
 // ok
+//ok2
 function MyApp({ Component, pageProps }) {
   //test23444
   return (
