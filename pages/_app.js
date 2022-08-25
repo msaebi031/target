@@ -5,7 +5,7 @@ import "../public/css/main.css";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
+      <Component {...pageProps}  />
     </ThemeProvider>
   );
 }
