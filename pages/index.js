@@ -1,7 +1,5 @@
-import Header from "../components/Header";
 import { Fragment } from "react";
 import Head from "next/head";
-import Line from "../components/Line";
 import App from "../container/App";
 
 export default function Home() {
