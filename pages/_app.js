@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@mui/material";
 import theme from "../components/Theme";
 import "../public/css/main.css";
-// aliii 22
+// aliii 22e
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
