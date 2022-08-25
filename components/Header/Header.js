@@ -33,7 +33,7 @@ const Headers = () => {
           گروه طراحی و توسعه دهنده وب تارگت دیزاینر
         </Typography>
         <Button
-          className="btn-header"
+          className="btn-header z-index"
           sx={{ color: "light.main" }}
           size="large"
           color="success"

@@ -100,7 +100,7 @@ const NavBar = () => {
         {/* Menu Size Md Uper */}
         <Box
           display={{ xs: "none", md: "flex" }}
-          className="justify-between w-100"
+          className="justify-between w-100 z-index"
           alignItems="center"
         >
           <Box className="d-flex justify-between">
@@ -117,12 +117,14 @@ const NavBar = () => {
             ))}
           </Box>
 
-          <Box
-            component="img"
-            src={"/img/logo.png"}
-            alt="لوگو"
-            className="widthLogo"
-          />
+          <Link href="#">
+            <Box
+              component="img"
+              src={"/img/logo.png"}
+              alt="لوگو"
+              className="widthLogo"
+            />
+          </Link>
         </Box>
         {/* Menu Size Md Uper */}
       </Toolbar>
