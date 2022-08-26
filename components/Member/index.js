@@ -7,13 +7,13 @@ const Member = () => {
       name: "علی اکبر اسماعیلی",
       p: "طراح و توسعه دهنده وب با ۲ سال فعالیت در این زمینه",
       src: "/img/work/1.png",
-      adress: "https://esmaely.yasser.com",
+      adress: "https://aliakbar.yasserver.com/",
     },
     {
       name: "محمد مهدی صائبی",
       p: "طراح و توسعه دهنده وب با ۲ سال فعالیت در این زمینه",
       src: "/img/work/1.png",
-      adress: "https://esmaely.yasser.com",
+      adress: "https://artan.yasserver.com/",
       pt: 13,
     },
   ];

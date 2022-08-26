@@ -38,9 +38,9 @@ const Content = () => {
       container
     >
       {items.map((item, index) => (
-        <Grid2 key={index} item xs={12} sm={6}>
+        <Grid2 key={index} item xs={12} md={6}>
           <Box
-            height="65%"
+            height="70%"
             p={4}
             className="border-box bg-dark"
             textAlign="center"
@@ -58,6 +58,7 @@ const Content = () => {
             <Typography
               lineHeight={1.8}
               mt={1.6}
+              mb={2}
               className="font-light"
               variant="body2"
               component="p"

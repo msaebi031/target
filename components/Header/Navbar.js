@@ -98,7 +98,7 @@ const NavBar = () => {
         onClose={() => handleOpen()}
         PaperProps={{
           sx: {
-            backgroundColor: "success.dark",
+            backgroundColor: "dark.main",
             color: "#FFFFFF",
             width: 280,
           },

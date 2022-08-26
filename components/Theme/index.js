@@ -25,7 +25,9 @@ const theme = createTheme({
     },
     success: {
       main: "#009981",
-      dark: "#111827",
+    },
+    dark: {
+      main: "rgb(25 19 29 / 99%)",
     },
     divider: "rgba(255, 255, 255, 0.1)",
   },

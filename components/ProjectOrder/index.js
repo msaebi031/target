@@ -42,10 +42,8 @@ const ProjectOrder = () => {
           </Typography>
           <Box mt={3}>
             <Button
-              // mt={2}
-              // className="btn-header z-index"
+              href="https://t.me/Target_Designer"
               sx={{ color: "light.main" }}
-              // size="large"
               color="success"
               variant="contained"
             >
