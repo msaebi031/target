@@ -3,7 +3,7 @@ import PolylineIcon from "@mui/icons-material/Polyline";
 import ShowChartIcon from "@mui/icons-material/ShowChart";
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
 import CodeOffIcon from "@mui/icons-material/CodeOff";
-
+import Grid2 from "@mui/material/Unstable_Grid2";
 const Content = () => {
   const items = [
     {
@@ -29,21 +29,32 @@ const Content = () => {
   ];
 
   return (
-    <Grid spacing={3} container>
+    <Grid2
+      mt={7}
+      spacing={{ xs: 0, sm: 5, md: 7, lg: 15 }}
+      rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 10 }}
+      container
+    >
       {items.map((item, index) => (
-        <Grid mt={10} key={index} item xs={6}>
-          <Box p={4} className="border-box bg-dark" textAlign="center">
+        <Grid2 key={index} item xs={12} sm={6}>
+          <Box
+            height="65%"
+            p={4}
+            className="border-box bg-dark"
+            textAlign="center"
+          >
             <Box color="success.main">{item.icon}</Box>
             <Typography
               mt={2}
               className="font-bold"
-              variant="body1"
+              variant="h6"
               component="h6"
               color="light.main"
             >
               {item.name}
             </Typography>
             <Typography
+              lineHeight={1.8}
               mt={1.6}
               className="font-light"
               variant="body2"
@@ -53,9 +64,9 @@ const Content = () => {
               {item.p}
             </Typography>
           </Box>
-        </Grid>
+        </Grid2>
       ))}
-    </Grid>
+    </Grid2>
   );
 };
 

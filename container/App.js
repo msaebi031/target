@@ -19,7 +19,7 @@ const App = () => {
     <Fragment>
       <Line zIndex="-1" height={height} />
       <Header />
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" className="container-1300">
         <Content />
         <About />
         <Work />
