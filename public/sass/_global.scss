@@ -85,6 +85,10 @@ a {
   text-decoration: none !important;
 }
 
+.border-box {
+  border: rgba(255, 255, 255, 0.1) solid 1px;
+}
+
 .text-decoration:hover {
   transition: all 0.3s !important;
   color: #d39b22 !important;
