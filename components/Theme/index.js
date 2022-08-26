@@ -23,7 +23,7 @@ const theme = createTheme({
     success: {
       main: "#009981",
     },
-    divider: "rgba(255, 255, 255, 0.1);",
+    divider: "rgba(255, 255, 255, 0.1)",
   },
 });
 
