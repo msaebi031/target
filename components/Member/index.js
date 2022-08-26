@@ -15,53 +15,57 @@ const Member = () => {
       p: "طراح و توسعه دهنده وب با ۲ سال فعالیت در این زمینه",
       src: "/img/work/1.png",
       adress: "https://esmaely.yasser.com",
-      pt: 10,
+      pt: 13,
     },
   ];
   return (
-    <Box mt={20} className="bg-dark">
-      <Box className="d-flex align-center border-box justify-between">
+    <Box mt={{ xs: 10, md: 13 }}>
+      <Grid2 spacing={{ xs: 0, sm: 5, md: 7, lg: 15 }} container>
         {items.map((item, index) => (
-          // <Grid2 key={index} mt={item.mt} xs={6} item>/
-          <Box py={4} px={2} className="d-flex align-center border-box">
-            <Avatar
-              sx={{ height: "105px", width: "105px", ml: 2.5 }}
-              src={item.src}
-              alt={item.name}
-              className="img-border"
-            />
-            <Box>
-              <Typography
-                component="h2"
-                color="light.main"
-                variant="body2"
-                className="font-bold"
-              >
-                {item.name}
-              </Typography>
-              <Typography
-                py={2}
-                component="p"
-                color="light.light"
-                variant="body2"
-                className="font-light"
-              >
-                {item.p}
-              </Typography>
-              <Button
-                sx={{ color: "light.main" }}
-                size="small"
-                color="success"
-                variant="contained"
-                href={item.adress}
-              >
-                مشاهده رزومه
-              </Button>
+          <Grid2 mt={{ xs: 4, md: item.pt }} item xs={12} sm={6} key={index}>
+            <Box
+              py={4}
+              px={2}
+              className="d-flex align-center border-box bg-dark"
+            >
+              <Avatar
+                sx={{ height: "105px", width: "105px", ml: 2.5 }}
+                src={item.src}
+                alt={item.name}
+                className="img-border"
+              />
+              <Box>
+                <Typography
+                  component="h2"
+                  color="light.main"
+                  variant="body2"
+                  className="font-bold"
+                >
+                  {item.name}
+                </Typography>
+                <Typography
+                  py={2}
+                  component="p"
+                  color="light.light"
+                  variant="body2"
+                  className="font-light"
+                >
+                  {item.p}
+                </Typography>
+                <Button
+                  sx={{ color: "light.main" }}
+                  size="small"
+                  color="success"
+                  variant="contained"
+                  href={item.adress}
+                >
+                  مشاهده رزومه
+                </Button>
+              </Box>
             </Box>
-          </Box>
-          // </Grid2>
+          </Grid2>
         ))}
-      </Box>
+      </Grid2>
     </Box>
   );
 };

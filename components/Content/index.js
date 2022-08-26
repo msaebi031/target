@@ -7,22 +7,22 @@ import Grid2 from "@mui/material/Unstable_Grid2";
 const Content = () => {
   const items = [
     {
-      icon: <PolylineIcon fontSize="large" />,
+      icon: <PolylineIcon className="size-icon" />,
       name: "تعداد سایت",
       p: "تیم ما تا به حال 25 سایت موفق روی گوگل طراحی کرده است",
     },
     {
-      icon: <CodeOffIcon fontSize="large" />,
+      icon: <CodeOffIcon className="size-icon" />,
       name: "طراح سایت",
       p: "طراحی وساخت انواع سایت ها با بهترین کیفیت",
     },
     {
-      icon: <ShowChartIcon fontSize="large" />,
+      icon: <ShowChartIcon className="size-icon" />,
       name: "تجربه کاری",
       p: "ما یک تیم کاری با تجربه هستیم که بیش از 2 سال هست بصورت حرفه ای در این زمینه کار می کنیم",
     },
     {
-      icon: <PeopleOutlineIcon fontSize="large" />,
+      icon: <PeopleOutlineIcon className="size-icon" />,
       name: "تیم قوی",
       p: "گروه ما شامل ی تیم بسیار قوی است که در زمینه های مختلف حرفه ای هستند",
     },

@@ -79,9 +79,9 @@ const Skill = () => {
         </Typography>
       </Box>
 
-      <Grid container spacing={{ sx: 0, sm: 3 }} px={3}>
+      <Grid container spacing={{ sx: 0, sm: 3 }} px={3} py={2}>
         {items.map((item, index) => (
-          <Grid item xl={6} lg={6} md={6} sm={6} xs={12} key={index}>
+          <Grid item xs={12} sm={6} key={index}>
             <Box>
               <Box
                 display="flex"
