@@ -72,7 +72,7 @@ const Skill = () => {
           component="h3"
           className="font-bold"
           color="light.main"
-          variant="h4"
+          variant="h5"
           py={3}
         >
           مهارت ها
