@@ -16,8 +16,8 @@ const Footer = () => {
           تارگت دیزاینر
         </Link>
       </Typography>
-      <Typography variant="body2" component="p" color="light.light">
-        &copy; تمامی حقوق مادی ومعنوی این سایت متعلق بهگروه تارگت دیزاینر می
+      <Typography variant="body2" component="p" color="light.light" px={2}>
+        &copy; تمامی حقوق مادی ومعنوی این سایت متعلق به گروه تارگت دیزاینر می
         باشد .
       </Typography>
     </Box>

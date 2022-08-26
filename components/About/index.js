@@ -4,7 +4,7 @@ import { Fragment } from "react";
 const About = () => {
   return (
     <Fragment>
-      <Box className="border-box bg-dark" my={14}>
+      <Box className="border-box bg-dark" my={14} id="Property">
         <Grid
           className="d-flex justify-center"
           container

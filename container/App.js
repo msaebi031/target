@@ -14,7 +14,7 @@ const App = () => {
   const [height, setHeight] = useState(null);
 
   useEffect(() => {
-    setHeight(document.documentElement.scrollHeight);
+    setHeight(document.documentElement.scrollHeight + 83);
   }, []);
 
   return (

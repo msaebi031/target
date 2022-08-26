@@ -5,9 +5,9 @@ import NavBar from "./Navbar";
 
 const Header = () => {
   return (
-    <Box className="bg-header" sx={{ height: { xs: "100vh", md: "80vh" } }}>
+    <Box className="bg-header" sx={{ height: { xs: "100vh", md: "90vh" } }}>
       <Container maxWidth="xl">
-        <Line zIndex="1" height="80vh" />
+        <Line zIndex="1" height="90vh" />
         <NavBar />
         <Headers />
       </Container>

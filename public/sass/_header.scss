@@ -29,3 +29,10 @@
   font-size: 1rem !important;
   border-radius: 150px !important;
 }
+
+//mediaQuery
+@media (max-width: 900px) {
+  .line {
+    height: 100vh !important;
+  }
+}

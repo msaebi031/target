@@ -1,14 +1,4 @@
-import { Fragment } from "react";
-import {
-  Box,
-  Grid,
-  Avatar,
-  Typography,
-  Button,
-  Container,
-  Link,
-} from "@mui/material";
-import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
+import { Box, Typography, Button, Container } from "@mui/material";
 
 const Headers = () => {
   return (
