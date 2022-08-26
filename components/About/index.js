@@ -14,7 +14,12 @@ const About = () => {
           >
             درباره ما
           </Typography>
-          <Typography component="p" color="light.light" variant="p">
+          <Typography
+            component="p"
+            color="light.light"
+            variant="body2"
+            className="font-light"
+          >
             از سال ۱۴۰۰ فعالیت خود را در زمینه ی طراحی سایت آغاز کردیم و به صورت
             تیمی در این حوضه فعالیت ی کنیم .از سال ۱۴۰۰ فعالیت خود را در زمینه ی
             طراحی سایت آغاز کردیم و به صورت تیمی در این حوضه فعالیت ی کنیم .از
