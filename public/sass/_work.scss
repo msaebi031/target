@@ -11,13 +11,11 @@
 
 .nemone-container {
   position: relative;
-  width: 50%;
 }
 
 .nemone-image {
   opacity: 1;
   display: block;
-  width: 100%;
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
@@ -34,15 +32,15 @@
   text-align: center;
 }
 
-.nemone-container:hover .image {
+.nemone-container:hover .nemone-image {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.nemone-container:hover .nemone-middle {
   opacity: 1;
 }
 
 .nemone-text {
-  background-color: #04aa6d;
-  padding: 16px 32px;
+  background-color: #009981;
+  padding: 11px 20px;
 }
