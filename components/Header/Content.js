@@ -11,7 +11,7 @@ const ContentNavbar = ({ pages, handleOpen }) => {
         }}
       >
         <Box p={4} textAlign="center">
-          <Typography color="light.main" variant="h5" component="h2">
+          <Typography color="light.main" variant="h6" component="h2">
             تارگت دیزاینر | Target Designer
           </Typography>
         </Box>
