@@ -19,6 +19,7 @@ const ContentNavbar = ({ pages, handleOpen }) => {
         <Box>
           {pages.map((item) => (
             <Button
+              key={index}
               href={item.href}
               component="a"
               disableRipple
