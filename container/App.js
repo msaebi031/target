@@ -8,6 +8,7 @@ import Work from "../components/Work";
 import Skill from "../components/Skill";
 import Member from "../components/Member";
 import ProjectOrder from "../components/ProjectOrder";
+import Footer from "../components/Footer";
 
 const App = () => {
   const [height, setHeight] = useState(null);
@@ -27,6 +28,7 @@ const App = () => {
         <Skill />
         <Member />
         <ProjectOrder />
+        <Footer />
       </Container>
     </Fragment>
   );
