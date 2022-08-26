@@ -4,17 +4,17 @@ const Line = ({ zIndex, height }) => {
   return (
     <Box
       display="flex"
-      justifyContent="space-around"
+      justifyContent="space-between"
       zIndex={zIndex}
       className="w-100 absolute right-0"
       height={height}
     >
       <Divider
         orientation="vertical"
-        // sx={{
-        //   margin: { xs: "0 auto", sm: "0" },
-        //   marginRight: { sm: "60px" },
-        // }}
+        sx={{
+          margin: { xs: "0 auto", sm: "0" },
+          marginRight: { sm: "105px" },
+        }}
         className="witdh-divider"
       />
       <Divider
@@ -31,7 +31,7 @@ const Line = ({ zIndex, height }) => {
         orientation="vertical"
         className="witdh-divider"
         sx={{
-          // marginLeft: { xs: "48px", sm: "60px" },
+          marginLeft: { xs: "48px", sm: "105px" },
           display: { xs: "none", sm: "block" },
         }}
       />
