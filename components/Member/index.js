@@ -10,7 +10,6 @@ const Member = () => {
       adress: "https://esmaely.yasser.com",
     },
     {
-      mt: 9,
       name: "محمد مهدی صائبی",
       p: "طراح و توسعه دهنده وب با ۲ سال فعالیت در این زمینه",
       src: "/img/work/1.png",
