@@ -12,7 +12,6 @@ const Nemone = () => {
       {items.map((item, index) => (
         <Grid item xs={12} md={6} key={index} p={7}>
           <Box className="nemone-container" pt={{ xs: 0, md: item.pt }}>
-            <div></div>
             <Box className="nemone-middle">
               <Box
                 component="img"
