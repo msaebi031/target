@@ -1,12 +1,13 @@
 import { Box, Divider } from "@mui/material";
 
-const Line = ({ zIndex }) => {
+const Line = ({ zIndex, height }) => {
   return (
     <Box
       display="flex"
       justifyContent="space-around"
       zIndex={zIndex}
-      className="w-100 h-100 absolute right-0"
+      className="w-100 absolute right-0"
+      height={height}
     >
       <Divider
         orientation="vertical"

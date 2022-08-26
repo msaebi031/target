@@ -32,7 +32,7 @@ const Content = () => {
     <Grid spacing={3} container>
       {items.map((item, index) => (
         <Grid mt={10} key={index} item xs={6}>
-          <Box p={4} className="border-box" textAlign="center">
+          <Box p={4} className="border-box bg-dark" textAlign="center">
             <Box color="success.main">{item.icon}</Box>
             <Typography
               mt={2}

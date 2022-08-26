@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Box className="bg-header" sx={{ height: { xs: "100vh", md: "80vh" } }}>
       <Container maxWidth="xl">
-        <Line zIndex="1" />
+        <Line zIndex="1" height="80vh" />
         <NavBar />
         <Headers />
       </Container>
