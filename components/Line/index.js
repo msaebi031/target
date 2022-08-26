@@ -6,10 +6,10 @@ const Line = ({ zIndex, height }) => {
       display="flex"
       justifyContent="space-between"
       zIndex={zIndex}
+      height={height}
       className={
         zIndex == 1 ? "w-100 absolute right-0 line" : "w-100 absolute right-0"
       }
-      height={height}
     >
       <Divider
         orientation="vertical"
