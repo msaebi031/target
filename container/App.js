@@ -4,6 +4,9 @@ import About from "../components/About";
 import Content from "../components/Content";
 import Header from "../components/Header";
 import Line from "../components/Line";
+import Work from "../components/Work";
+import Skill from "../components/Skill";
+import Member from "../components/Member";
 
 const App = () => {
   const [height, setHeight] = useState(null);
@@ -19,6 +22,9 @@ const App = () => {
       <Container maxWidth="lg">
         <Content />
         <About />
+        <Work />
+        <Skill />
+        <Member />
       </Container>
     </Fragment>
   );
