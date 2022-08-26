@@ -20,7 +20,7 @@ const NavBar = () => {
     { name: "سفارش پروژه", href: "#OrderProject" },
   ];
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(!open);
