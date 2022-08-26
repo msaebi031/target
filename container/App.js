@@ -7,8 +7,8 @@ import Line from "../components/Line";
 import Work from "../components/Work";
 import Skill from "../components/Skill";
 import Member from "../components/Member";
-import ProjectOrder from "../components/ProjectOrder";
 import Footer from "../components/Footer";
+import ProjectOrder from "../components/ProjectOrder";
 
 const App = () => {
   const [height, setHeight] = useState(null);

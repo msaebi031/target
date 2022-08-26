@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 const Nemone = () => {
   const items = [
@@ -11,13 +11,24 @@ const Nemone = () => {
     <Grid container>
       {items.map((item, index) => (
         <Grid item xs={12} md={6} key={index} p={7}>
-          <Box pt={{ xs: 0, md: item.pt }}>
-            <Box
-              component="img"
-              src={item.src}
-              alt="نمونه کار"
-              className="w-100 img-border"
-            />
+          <Box className="nemone-container" pt={{ xs: 0, md: item.pt }}>
+            <div></div>
+            <Box className="nemone-middle">
+              <Box
+                component="img"
+                src={item.src}
+                alt="نمونه کار"
+                className="w-100 img-border nemone-image"
+              />
+              <Typography
+                component="p"
+                color="light.light"
+                variant="body1"
+                className="font-light nemone-text"
+              >
+                alii
+              </Typography>
+            </Box>
           </Box>
         </Grid>
       ))}
