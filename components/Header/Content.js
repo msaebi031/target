@@ -17,7 +17,7 @@ const ContentNavbar = ({ pages, handleOpen }) => {
         </Box>
         <Divider />
         <Box>
-          {pages.map((item) => (
+          {pages.map((item, index) => (
             <Button
               key={index}
               href={item.href}
