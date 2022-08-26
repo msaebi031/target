@@ -20,8 +20,12 @@ const theme = createTheme({
       main: "rgba(255, 255, 255, 0.9)",
       contrastText: "rgba(255, 255, 255, 0.6)",
     },
+    error: {
+      main: "#ef5350",
+    },
     success: {
       main: "#009981",
+      dark: "#111827",
     },
     divider: "rgba(255, 255, 255, 0.1)",
   },

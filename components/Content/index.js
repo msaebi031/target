@@ -1,28 +1,30 @@
 import { Box, Grid, Typography } from "@mui/material";
-import PolylineIcon from "@mui/icons-material/Polyline";
-import ShowChartIcon from "@mui/icons-material/ShowChart";
-import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
-import CodeOffIcon from "@mui/icons-material/CodeOff";
+import {
+  CodeOff,
+  PeopleOutline,
+  ShowChart,
+  Polyline,
+} from "@mui/icons-material";
 import Grid2 from "@mui/material/Unstable_Grid2";
 const Content = () => {
   const items = [
     {
-      icon: <PolylineIcon className="size-icon" />,
+      icon: <Polyline className="size-icon" />,
       name: "تعداد سایت",
       p: "تیم ما تا به حال 25 سایت موفق روی گوگل طراحی کرده است",
     },
     {
-      icon: <CodeOffIcon className="size-icon" />,
+      icon: <CodeOff className="size-icon" />,
       name: "طراح سایت",
       p: "طراحی وساخت انواع سایت ها با بهترین کیفیت",
     },
     {
-      icon: <ShowChartIcon className="size-icon" />,
+      icon: <ShowChart className="size-icon" />,
       name: "تجربه کاری",
       p: "ما یک تیم کاری با تجربه هستیم که بیش از 2 سال هست بصورت حرفه ای در این زمینه کار می کنیم",
     },
     {
-      icon: <PeopleOutlineIcon className="size-icon" />,
+      icon: <PeopleOutline className="size-icon" />,
       name: "تیم قوی",
       p: "گروه ما شامل ی تیم بسیار قوی است که در زمینه های مختلف حرفه ای هستند",
     },

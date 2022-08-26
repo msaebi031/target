@@ -19,7 +19,7 @@ const Member = () => {
     },
   ];
   return (
-    <Box mt={{ xs: 10, md: 13 }}>
+    <Box mt={{ xs: 10, md: 13 }} id="Awards">
       <Grid2 spacing={{ xs: 0, sm: 5, md: 7, lg: 15 }} container>
         {items.map((item, index) => (
           <Grid2 mt={{ xs: 4, md: item.pt }} item xs={12} sm={6} key={index}>

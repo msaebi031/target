@@ -4,131 +4,110 @@ import {
   Box,
   Toolbar,
   IconButton,
-  Typography,
-  Menu,
   MenuItem,
   Link,
+  Drawer,
 } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
-
-const pages = [
-  { name: "درباره ما", href: "#Property" },
-  { name: "نمونه کار", href: "#Ability" },
-  { name: "رزومه افراد", href: "#awards" },
-  { name: "مهارت ها", href: "#Property" },
-  { name: "سفارش پروژه", href: "#Ability" },
-];
+import ContentNavbar from "./Content";
 
 const NavBar = () => {
-  const [anchorElNav, setAnchorElNav] = useState(null);
+  const pages = [
+    { name: "درباره ما", href: "#Property" },
+    { name: "نمونه کار", href: "#Ability" },
+    { name: "رزومه افراد", href: "#Awards" },
+    { name: "مهارت ها", href: "#Skill" },
+    { name: "سفارش پروژه", href: "#OrderProject" },
+  ];
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+  const [open, setOpen] = useState(true);
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const handleOpen = () => {
+    setOpen(!open);
   };
 
   return (
-    <AppBar className="bg-navbar" position="static">
-      <Toolbar>
-        {/* Menu Size Xs Uper */}
-        <Box
-          display={{ xs: "flex", md: "none" }}
-          className="justify-between align-center w-100"
-        >
-          <Box>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-              className="borderMenu"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              display={{ xs: "block", md: "none" }}
-            >
+    <>
+      <AppBar className="bg-navbar" position="static">
+        <Toolbar>
+          {/* Menu Size Xs Uper */}
+          <Box
+            display={{ xs: "flex", md: "none" }}
+            className="justify-between align-center w-100"
+          >
+            <Box>
+              <IconButton
+                size="large"
+                aria-label="menu"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={() => handleOpen()}
+                color="inherit"
+                className="borderMenu z-index"
+              >
+                <MenuIcon />
+              </IconButton>
+            </Box>
+            <Box>
+              <Box
+                component="img"
+                src={"/img/logo.png"}
+                alt="لوگو"
+                className="widthLogo styleLogoXs"
+              />
+            </Box>
+          </Box>
+          {/* Menu Size Xs Uper */}
+
+          {/* Menu Size Md Uper */}
+          <Box
+            display={{ xs: "none", md: "flex" }}
+            className="justify-between w-100 z-index"
+            alignItems="center"
+          >
+            <Box className="d-flex justify-between">
               {pages.map((page, index) => (
-                <MenuItem
-                  key={index}
-                  onClick={handleCloseNavMenu}
-                  className="dividerMarginXs"
-                >
-                  <Link href={page.href}>
-                    <Typography
-                      className="font-bold"
-                      color="light.light"
-                      variant="body2"
-                      textAlign="center"
-                    >
-                      {page.name}
-                    </Typography>
+                <MenuItem key={index}>
+                  <Link
+                    href={page.href}
+                    className="navbar-hover"
+                    color="light.light"
+                  >
+                    {page.name}
                   </Link>
                 </MenuItem>
               ))}
-            </Menu>
-          </Box>
-          <Box>
-            <Box
-              component="img"
-              src={"/img/logo.png"}
-              alt="لوگو"
-              className="widthLogo styleLogoXs"
-            />
-          </Box>
-        </Box>
-        {/* Menu Size Xs Uper */}
+            </Box>
 
-        {/* Menu Size Md Uper */}
-        <Box
-          display={{ xs: "none", md: "flex" }}
-          className="justify-between w-100 z-index"
-          alignItems="center"
-        >
-          <Box className="d-flex justify-between">
-            {pages.map((page, index) => (
-              <MenuItem key={index}>
-                <Link
-                  href={page.href}
-                  className="navbar-hover"
-                  color="light.light"
-                >
-                  {page.name}
-                </Link>
-              </MenuItem>
-            ))}
+            <Link href="#">
+              <Box
+                component="img"
+                src={"/img/logo.png"}
+                alt="لوگو"
+                className="widthLogo"
+              />
+            </Link>
           </Box>
+          {/* Menu Size Md Uper */}
+        </Toolbar>
+      </AppBar>
 
-          <Link href="#">
-            <Box
-              component="img"
-              src={"/img/logo.png"}
-              alt="لوگو"
-              className="widthLogo"
-            />
-          </Link>
-        </Box>
-        {/* Menu Size Md Uper */}
-      </Toolbar>
-    </AppBar>
+      <Drawer
+        anchor="right"
+        open={open}
+        onClose={() => handleOpen()}
+        PaperProps={{
+          sx: {
+            backgroundColor: "success.dark",
+            color: "#FFFFFF",
+            width: 280,
+          },
+        }}
+        variant="temporary"
+      >
+        <ContentNavbar pages={pages} handleOpen={() => handleOpen()} />
+      </Drawer>
+    </>
   );
 };
 export default NavBar;

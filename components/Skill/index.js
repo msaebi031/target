@@ -66,7 +66,7 @@ const Skill = () => {
     },
   ];
   return (
-    <Box className="border-box bg-dark">
+    <Box className="border-box bg-dark" id="Skill">
       <Box textAlign="center">
         <Typography
           component="h3"

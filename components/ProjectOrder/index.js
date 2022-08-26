@@ -2,7 +2,7 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 
 const ProjectOrder = () => {
   return (
-    <Box className="border-box bg-dark" my={14}>
+    <Box className="border-box bg-dark" my={14} id="OrderProject">
       <Grid
         className="d-flex justify-center"
         container
@@ -14,7 +14,7 @@ const ProjectOrder = () => {
           <Box
             component="img"
             src={"/img/projectorde.png"}
-            alt="درباره ما"
+            alt="سفارش پروژه"
             className="w-100"
           />
         </Grid>
