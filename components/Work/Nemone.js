@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 
 const Nemone = () => {
   const items = [
@@ -20,14 +20,16 @@ const Nemone = () => {
                 className="w-100 img-border nemone-image"
               />
               <Box className="nemone-middle">
-                <Typography
-                  component="p"
-                  color="light.light"
-                  variant="body1"
-                  className="font-light nemone-text"
+                <Button
+                  className="font-light"
+                  sx={{ color: "light.main" }}
+                  size="large"
+                  color="success"
+                  variant="contained"
+                  href="#"
                 >
                   {item.text}
-                </Typography>
+                </Button>
               </Box>
             </Box>
           </Box>

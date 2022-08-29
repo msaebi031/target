@@ -73,7 +73,8 @@ const Skill = () => {
           className="font-bold"
           color="light.main"
           variant="h5"
-          py={3}
+          pt={3}
+          pb={2}
         >
           مهارت ها
         </Typography>

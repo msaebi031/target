@@ -12,7 +12,7 @@ const Work = () => {
             className="font-bold"
             color="light.main"
             variant="h5"
-            py={3}
+            pt={3}
           >
             نمونه کار ها
           </Typography>
@@ -22,6 +22,7 @@ const Work = () => {
             variant="body2"
             className="font-light"
             pb={2}
+            pt={1.6}
           >
             نمونه کار های گروه تارگت دیزاینر
           </Typography>

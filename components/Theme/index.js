@@ -27,10 +27,10 @@ const theme = createTheme({
       main: "#009981",
     },
     green: {
-      main: "#00fa92",
+      main: "#56ec71",
     },
     blue: {
-      main: "#0096ff",
+      main: "#2ca0da",
     },
 
     dark: {

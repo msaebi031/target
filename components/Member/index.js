@@ -6,13 +6,13 @@ const Member = () => {
     {
       name: "علی اکبر اسماعیلی",
       p: "طراح و توسعه دهنده وب با ۲ سال فعالیت در این زمینه",
-      src: "/img/work/1.png",
+      src: "/img/menber/1.png",
       adress: "https://aliakbar.yasserver.com/",
     },
     {
       name: "محمد مهدی صائبی",
       p: "طراح و توسعه دهنده وب با ۲ سال فعالیت در این زمینه",
-      src: "/img/work/1.png",
+      src: "/img/menber/2.jfif",
       adress: "https://artan.yasserver.com/",
       pt: 13,
     },
@@ -43,7 +43,8 @@ const Member = () => {
                   {item.name}
                 </Typography>
                 <Typography
-                  py={2}
+                  pb={2.2}
+                  pt={1}
                   component="p"
                   color="light.light"
                   variant="body2"
