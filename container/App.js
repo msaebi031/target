@@ -9,6 +9,7 @@ import Skill from "../components/Skill";
 import Member from "../components/Member";
 import Footer from "../components/Footer";
 import ProjectOrder from "../components/ProjectOrder";
+import Fixed from "../components/Fixed";
 
 const App = () => {
   const [height, setHeight] = useState(null);
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <Fragment>
+      <Fixed />
       <Line zIndex="-1" height={height} />
       <Header />
       <Container maxWidth="lg" className="container-1300">

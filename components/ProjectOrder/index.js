@@ -1,6 +1,13 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
+import { useState } from "react";
+import Modals from "../Modal";
 
 const ProjectOrder = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
   return (
     <Box className="border-box bg-dark" my={14} id="OrderProject">
       <Grid
@@ -42,16 +49,17 @@ const ProjectOrder = () => {
           </Typography>
           <Box mt={3}>
             <Button
-              href="https://t.me/Target_Designer"
               sx={{ color: "light.main" }}
               color="success"
               variant="contained"
+              onClick={() => handleOpen()}
             >
               سفارش پروژه
             </Button>
           </Box>
         </Grid>
       </Grid>
+      <Modals open={open} handleOpen={() => handleOpen()} />
     </Box>
   );
 };

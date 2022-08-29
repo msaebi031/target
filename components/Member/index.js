@@ -37,7 +37,7 @@ const Member = () => {
                 <Typography
                   component="h2"
                   color="light.main"
-                  variant="body2"
+                  variant="body1"
                   className="font-bold"
                 >
                   {item.name}
@@ -57,6 +57,7 @@ const Member = () => {
                   color="success"
                   variant="contained"
                   href={item.adress}
+                  target="_blank"
                 >
                   مشاهده رزومه
                 </Button>

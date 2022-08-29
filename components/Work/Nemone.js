@@ -16,7 +16,7 @@ const Nemone = () => {
               <Box
                 component="img"
                 src={item.src}
-                alt="نمونه کار"
+                alt={item.text}
                 className="w-100 img-border nemone-image"
               />
               <Box className="nemone-middle">

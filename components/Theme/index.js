@@ -26,6 +26,13 @@ const theme = createTheme({
     success: {
       main: "#009981",
     },
+    green: {
+      main: "#00fa92",
+    },
+    blue: {
+      main: "#0096ff",
+    },
+
     dark: {
       main: "rgb(25 19 29 / 99%)",
     },

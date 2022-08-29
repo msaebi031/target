@@ -36,6 +36,7 @@ const Content = () => {
       spacing={{ xs: 0, sm: 5, md: 7, lg: 15 }}
       rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 10 }}
       container
+      id="Content"
     >
       {items.map((item, index) => (
         <Grid2 key={index} item xs={12} md={6}>

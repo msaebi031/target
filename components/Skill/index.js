@@ -108,8 +108,8 @@ const Skill = () => {
               </Box>
               <Line
                 percent={item.percent}
-                strokeWidth="1.2"
-                trailWidth="1"
+                strokeWidth="1.3"
+                trailWidth="1.2"
                 strokeColor="#009981"
                 trailColor="#6C757D"
               />

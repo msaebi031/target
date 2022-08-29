@@ -30,6 +30,29 @@
   border-radius: 150px !important;
 }
 
+@keyframes arrow {
+  0% {
+    padding-top: 20px;
+  }
+  25% {
+    padding-top: 25px;
+  }
+  50% {
+    padding-top: 30px;
+  }
+  75% {
+    padding-top: 35px;
+  }
+  100% {
+    padding-top: 40px;
+  }
+}
+
+.btn-arrow {
+  /* animation shorthand */
+  animation: arrow 1s linear infinite;
+}
+
 //mediaQuery
 @media (max-width: 900px) {
   .line {

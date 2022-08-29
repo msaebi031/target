@@ -7,7 +7,7 @@ export default function Home() {
     <Fragment>
       <Head>
         <title>Target designer | تارگت دیزاینر</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="description"
           content="گروه برنامه نویسی،برنامه نویس سایت،طراح سایت"
