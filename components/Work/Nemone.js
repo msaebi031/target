@@ -1,12 +1,24 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const Nemone = () => {
-  const items = [
-    { src: "/img/work/1.png", text: "ربات شلم" },
-    { src: "/img/work/2.png", text: "فروشگاه", pt: 10 },
-    { src: "/img/work/3.png", text: "رزومه شخصی" },
-    { src: "/img/work/4.png", text: "دیجی پرنت", pt: 10 },
-  ];
+  const [items, setItems] = useState([]);
+  const router = useRouter();
+
+  useEffect(() => {
+    axios
+      .get("https://target-designer.com/api/")
+      .then(function (response) {
+        // handle
+        setItems(response.data.list);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
+  console.log(`${router.basePath}/test`);
   return (
     <Grid container>
       {items.map((item, index) => (
