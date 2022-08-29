@@ -6,13 +6,13 @@ const Member = () => {
     {
       name: "علی اکبر اسماعیلی",
       p: "طراح و توسعه دهنده وب با ۲ سال فعالیت در این زمینه",
-      src: "/img/menber/1.png",
+      src: "/img/menber/sibil.png",
       adress: "https://aliakbar.yasserver.com/",
     },
     {
       name: "محمد مهدی صائبی",
       p: "طراح و توسعه دهنده وب با ۲ سال فعالیت در این زمینه",
-      src: "/img/menber/2.jfif",
+      src: "/img/menber/sibil.png",
       adress: "https://artan.yasserver.com/",
       pt: 13,
     },
