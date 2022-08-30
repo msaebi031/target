@@ -28,7 +28,7 @@ const NavBar = () => {
 
   return (
     <>
-      <AppBar className="bg-navbar" position="static">
+      <AppBar className="bg-navbar" position="static" color="transparent">
         <Toolbar>
           {/* Menu Size Xs Uper */}
           <Box

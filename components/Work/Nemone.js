@@ -9,7 +9,7 @@ const Nemone = () => {
 
   useEffect(() => {
     axios
-      .get("https://target-designer.com/api/")
+      .get("https://api.target-designer.com/api-target/")
       .then(function (response) {
         // handle
         setItems(response.data.list);
@@ -18,7 +18,6 @@ const Nemone = () => {
         console.log(error);
       });
   }, []);
-  console.log(`${router.basePath}/test`);
   return (
     <Grid container>
       {items.map((item, index) => (
@@ -38,7 +37,8 @@ const Nemone = () => {
                   size="large"
                   color="success"
                   variant="contained"
-                  href="#"
+                  href={item.url}
+                  target="_blank"
                 >
                   {item.text}
                 </Button>

@@ -126,7 +126,7 @@ a {
 }
 
 .position-fixed {
-  position: fixed;
+  position: fixed !important;
   left: 10px;
 }
 
