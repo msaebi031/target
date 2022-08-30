@@ -21,7 +21,7 @@ const Nemone = () => {
   return (
     <Grid container>
       {items.map((item, index) => (
-        <Grid item xs={12} md={6} key={index} p={7}>
+        <Grid item xs={12} md={6} key={index} p={{ xs: 2, sm: 7 }}>
           <Box pt={{ xs: 0, md: item.pt }}>
             <Box className="nemone-container">
               <Box

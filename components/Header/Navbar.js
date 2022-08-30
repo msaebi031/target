@@ -28,12 +28,12 @@ const NavBar = () => {
 
   return (
     <>
-      <AppBar className="bg-navbar" position="static" color="transparent">
+      <AppBar className="bg-navbar" position="static">
         <Toolbar>
           {/* Menu Size Xs Uper */}
           <Box
             display={{ xs: "flex", md: "none" }}
-            className="justify-between align-center w-100"
+            className="justify-between align-end w-100"
           >
             <Box>
               <IconButton
@@ -79,14 +79,14 @@ const NavBar = () => {
               ))}
             </Box>
 
-            <Link href="#">
-              <Box
-                component="img"
-                src={"/img/logo.png"}
-                alt="لوگو"
-                className="widthLogo"
-              />
-            </Link>
+            {/* <Link href="#"> */}
+            <Box
+              component="img"
+              src={"/img/logo.png"}
+              alt="لوگو"
+              className="widthLogo"
+            />
+            {/* </Link> */}
           </Box>
           {/* Menu Size Md Uper */}
         </Toolbar>
