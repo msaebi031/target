@@ -1,5 +1,5 @@
-import { ExpandLess, Favorite } from "@mui/icons-material";
-import { Box, Typography, Link, IconButton, Container } from "@mui/material";
+import { Favorite } from "@mui/icons-material";
+import { Box, Typography, Link } from "@mui/material";
 
 const Footer = () => {
   return (

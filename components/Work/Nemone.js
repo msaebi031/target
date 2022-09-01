@@ -1,11 +1,9 @@
 import { Box, Button, Grid } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 
 const Nemone = () => {
   const [items, setItems] = useState([]);
-  const router = useRouter();
 
   useEffect(() => {
     axios

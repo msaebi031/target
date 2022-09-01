@@ -61,6 +61,11 @@
   animation: arrow 1s linear infinite;
 }
 
+.line-true {
+  position: fixed;
+  top: 0;
+}
+
 //mediaQuery
 @media (max-width: 900px) {
   .line {

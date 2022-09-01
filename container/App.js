@@ -12,16 +12,9 @@ import ProjectOrder from "../components/ProjectOrder";
 import Fixed from "../components/Fixed";
 
 const App = () => {
-  const [height, setHeight] = useState(null);
-
-  useEffect(() => {
-    setHeight(document.documentElement.scrollHeight + 83);
-  }, []);
-
   return (
     <Fragment>
       <Fixed />
-      <Line zIndex="-1" height={height} />
       <Header />
       <Container maxWidth="lg" className="container-1300">
         <Content />
@@ -32,6 +25,7 @@ const App = () => {
         <ProjectOrder />
         <Footer />
       </Container>
+      <Line zIndex="-1" height="100%" />
     </Fragment>
   );
 };
