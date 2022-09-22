@@ -11,11 +11,13 @@ const Headers = () => {
   };
   return (
     <Container maxWidth="md">
-      <Box textAlign="center" pt={{ xs: 5, sm: 7 }}>
+      <Box textAlign="center" pt={{ xs: 3, sm: 7 }}>
         <Typography
-          className="font-bold line-height-2"
+          className="font-bold"
           variant="h1"
           component="h1"
+          fontSize={{ xs: "38px", sm: "45px" }}
+          lineHeight={{ xs: 1.7, sm: 2 }}
           color="light.main"
         >
           طراحی سایت مورد علاقه تون رو به ما بسپارید
